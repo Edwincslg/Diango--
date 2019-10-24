@@ -1,0 +1,13 @@
+{% extends 'note/base.html' %}
+{% load static %}
+{% block content %}
+
+<h1><br>Amy's Note</h1>
+
+{% for x in list %}
+<hr>
+<h3>{{x.subject}}</h3>
+<pre>{{x.detail|linebreaks}}</pre>
+
+{% endfor %}
+{% endblock %}
